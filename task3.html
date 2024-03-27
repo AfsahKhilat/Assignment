@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<style>
+    .container {
+        position: relative;
+        display: inline-block;
+    }
+    .image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.container:hover .text {
+    opacity: 1;
+}
+</style>
+<body>
+    <div class="container">
+        <img src="download.jpg" alt="Image" class="image"height="30"width="30">
+        <div class="text">
+            Text to display on hover
+        </div>
+    </div>
+ 
+</body>
+</html>
